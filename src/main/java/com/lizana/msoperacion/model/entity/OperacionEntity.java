@@ -15,8 +15,8 @@ public class OperacionEntity {
 
     @Id
     private String id;
-    private String IdSaldo;
-    private String tipodeOperacion;
+    private String idSaldo;
+    private String tipoDeOperacion;
     private Long monto;
 
 }

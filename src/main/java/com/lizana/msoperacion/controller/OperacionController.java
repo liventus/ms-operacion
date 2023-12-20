@@ -2,7 +2,6 @@ package com.lizana.msoperacion.controller;
 
 
 import com.lizana.msoperacion.model.dto.OperacionDto;
-import com.lizana.msoperacion.model.dto.Status;
 import com.lizana.msoperacion.service.OperacionService;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Maybe;
@@ -37,16 +36,10 @@ public class OperacionController {
     }
 
 
-    @PutMapping
-    public Maybe<OperacionDto> update(@RequestBody OperacionDto product) {
-        return operacionService.updateProduct(product);
-    }
 
 
-    @DeleteMapping
-    public Maybe<Status> delete(@RequestHeader String productId) {
-        return operacionService.deleteProduct(productId);
-    }
+
+
 
 
 
